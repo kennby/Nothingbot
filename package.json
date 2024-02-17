@@ -1,11 +1,11 @@
 {
-    "name": "Kasuma-Bot",
-    "version": "2.0",
-    "description": "hola, este es el repositorio oficial de Kasuma-Bot.",
-    "creator": "Guillermo",
-    "creatornumero": "+593 99 566 8111",
-    "colaborador": "Sebastian",
-    "colaboradornumero": "+57 301 4953662",
+    "name": "nothing-Bot",
+    "version": "1.0",
+    "description": "repositorio oficial de nothing-Bot.",
+    "creator": "kenn",
+    "creatornumero": "",
+    "colaborador": "",
+    "colaboradornumero": "",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -23,16 +23,16 @@
     "keywords": [
         "whatsaap-bot"
     ],
-    "homepage": "https://github.com/ByTraxnox-X/KasumaBot-MD",
+    "homepage": "",
     "author": {
-        "name": "Kasuma-Bot"
+        "name": "nothing-Bot"
     },
     "repository": {
-        "type": "git+https://github.com/ByTraxnox-X/KasumaBot-MD.git",
+        "type": "",
         "url": ""
     },
     "bugs": {
-        "url": "https://github.com/ByTraxnox-X/KasumaBot-MD/issues"
+        "url": ""
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
@@ -100,4 +100,4 @@
         "wa-sticker-formatter": "^4.3.2",
         "moment-timezone": "^0.5.37"
     }
-}
+    }
