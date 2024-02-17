@@ -27,11 +27,11 @@ global.APIKeys = { // APIKey Here
 
 // CONEXION CON CODIGO DE 8 DIGITOS
 
-global.KasumaCode = "" 
+global.NothingCode = "" 
 global.confirmCode = ""
 
 
-// KASU API
+//API
 global.apikasu = "https://apikasu.onrender.com"
 global.apikeykasu = "SebastianDevelop"
 
