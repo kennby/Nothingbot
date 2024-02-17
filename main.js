@@ -120,7 +120,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['KasumaBot', 'Edge', '2.0.0'] : methodCodeQR ? ['KasumaBot', 'Edge', '2.0.0'] : ['Chrome (Linux)', '', ''],
+browser: opcion == '1' ? ['nothingBot', 'Edge', '2.0.0'] : methodCodeQR ? ['nothingot', 'Edge', '2.0.0'] : ['Chrome (Linux)', '', ''],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -148,11 +148,11 @@ let addNumber
 if (!!phoneNumber) {
 addNumber = phoneNumber.replace(/[^0-9]/g, '')
 if (!Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
-console.log(chalk.bgBlack(chalk.bold.greenBright('Escriba su bien su numero, ejemplo "57 321 5683772"')))
+console.log(chalk.bgBlack(chalk.bold.greenBright('Escriba su bien su numero, ejemplo "999999999"')))
 process.exit(0)
 }} else {
 while (true) {
-addNumber = await question(chalk.bold.greenBright(`EL NUMERO ESTABLECIDO SE ENCUENTRA ERRONEO, SIGA ESTE EJEMPLO. EJEMPLO: "57 321 5683772"`))
+addNumber = await question(chalk.bold.greenBright(`EL NUMERO ESTABLECIDO SE ENCUENTRA ERRONEO, SIGA ESTE EJEMPLO. EJEMPLO: "999999999"`))
 addNumber = addNumber.replace(/[^0-9]/g, '')
 
 if (addNumber.match(/^\d+$/) && Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
@@ -355,5 +355,5 @@ async function _quickTest() {
 }
 
 _quickTest()
-  .then(() => conn.logger.info('iniciando Kasuma-Bot'))
+  .then(() => conn.logger.info('iniciando nothing-Bot'))
   .catch(console.error)
