@@ -85,7 +85,7 @@ const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFil
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache()
 const {version} = await fetchLatestBaileysVersion();
-let phoneNumber = global.KasumaCode
+let phoneNumber = global.NothingCode
 
 const methodCodeQR = process.argv.includes("qr")
 const methodCode = !!phoneNumber || process.argv.includes("code")
